@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid" style=" justify-content: center; text-align: center;">
-    <a class="navbar-brand" href="#">Pengelolaan tugas</a>
+    <a class="navbar-brand" >Pengelolaan tugas</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,11 +8,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent" >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-        </li><!--
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Tambah Tugas</a>
+        </li>
         <li class="nav-item">
-          <a class="nav-link active" href="{% url 'add_task' %}">add</a>
-        </li>-->
+          <a class="nav-link active" href="{% url 'completed_tasks' %}">Tugas Selesai</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'pending_tasks' %}">Tugas Selesai</a>
+        </li>
       </ul>
     </div>
   </div>

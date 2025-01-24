@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Belum Selesai</title>
+</head>
+<body>
+    <h1>Daftar Tugas Belum Selesai</h1>
+    <a href="{% url 'home' %}">Kembali ke Daftar Tugas</a>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
